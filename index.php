@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>My First PHP Web Page</title>
+		<title>ROOT</title>
 	</head>
 	<body>
-		<?php print('Hello World!'); ?>
+		<?php echo "HEY THERE!"; ?>
 	</body>
 </html>
