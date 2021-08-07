@@ -4,12 +4,13 @@
 		<title>ROOT</title>
 		<link href="styles.css" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 
 	<body>
 		<header>
 			<a href="index.html"><img class= "logo" src="images/logo-1.png" alt="logo"></a>
-			<nav>
+			<nav class="navbar", id="top_nav_bar">
 				<ul class="nav_links">
 					<li><a href="#">Root</a></li>
 					<li><a href="#">Hakkında</a></li>
@@ -17,6 +18,9 @@
 				</ul>
 			</nav>
 			<a class="cta" href="#"><button>İletişim</button></a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			  </a>
 		</header>
 
 		<center><h2 class="post-list-heading" style="color:white">ROOT</h2></center> 
@@ -27,6 +31,17 @@
 			kapıların, geçişlerin, zamanın, dualitenin ve sonların tanrısıdır Janus. Root’u her şeyin başladığı kapı 
 			olarak görürsek, Janus bu kapıda duran tanrıdır.
 		</p>
-		
+
+		<script>
+		function myFunction() {
+			var x = document.getElementById("top_nav_bar");
+			if (x.className === "navbar") {
+				x.className += " responsive";
+			} else {
+				x.className = "navbar";
+			}
+		}
+		</script>
+	
 	</body>
 </html>
