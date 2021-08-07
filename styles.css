@@ -1,10 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 	background-color: #24252A
+}
+
+p, h2 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	color: #edf0f1;
+	text-decoration: none;
+}
+
+p {
+	text-align: justify;
+	margin-left: auto 100px auto 100px;
 }
 
 li, a {
