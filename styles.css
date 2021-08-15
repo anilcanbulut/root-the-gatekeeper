@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
 
 * {
 	box-sizing: border-box;
@@ -8,17 +9,31 @@
 	background-color: #24252A
 }
 
-p, h2 {
+p{
 	font-family: "Roboto", sans-serif;
 	font-weight: 500;
-	font-size: 14px;
+	font-size: 16px;
 	color: #edf0f1;
 	text-decoration: none;
+
+	text-align: justify;
+	margin-left: 15%;
+	margin-right: 15%;
+	
+	overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 3; /* number of lines to show */
+   -webkit-box-orient: vertical;
+
 }
 
-p {
-	text-align: justify;
-	margin-left: auto 100px auto 100px;
+h2 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 1000;
+	font-size: 40px;
+	color: #edf0f1;
+	text-decoration: none;
 }
 
 div.nav {
@@ -87,7 +102,7 @@ label {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
     label {
         display: block;
         cursor: pointer;
@@ -107,9 +122,92 @@ label {
         display: block;
     }
 
-	button {
-		display: block;
+	.iletisim {
+		display: none;
 	}
     
+	p {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
     
 }
+
+/*#######################*/
+
+.grid {
+	text-align: center;
+ }
+
+.grid-item {
+	text-align: center;
+	display: inline-block;
+	background-color: #24252A;
+	border-radius: 10px;
+	overflow: hidden;
+	width: 240px;
+	height: 320px;
+	box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: 0.2s;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+.grid-item:hover {
+	transform: translateY(-0.5%);
+	box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+	display: block;
+	width: 240px;
+	height: 150px;
+	object-fit: cover;
+}
+
+.card-content {
+	padding: 5px;
+}
+
+.card-header {
+	font-family: "Montserrat", sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	color: #ffffff;
+	margin-bottom: 10px;
+}
+
+.card-text {
+	font-size: 14px;
+	font-weight: 200;
+	color: #ffffff;
+	margin: 0 5px 30px 5px;
+}
+
+.card-btn {
+	background-color: rgb(0, 169, 141);
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	width: 60px;
+	height: 20px;
+
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	color: #edf0f1;
+	margin: 0 20px 0px 150px;
+	padding: 10px 10px 25px 10px;
+}
+
+.card-btn:hover, .card-btn:active {
+	background-color: #c2cffc;
+}
+
+
+
+
+
+
