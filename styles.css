@@ -9,6 +9,7 @@
 	background-color: #24252A
 }
 
+
 p{
 	font-family: "Roboto", sans-serif;
 	font-weight: 500;
@@ -19,12 +20,6 @@ p{
 	text-align: justify;
 	margin-left: 15%;
 	margin-right: 15%;
-	
-	overflow: hidden;
-   text-overflow: ellipsis;
-   display: -webkit-box;
-   -webkit-line-clamp: 3; /* number of lines to show */
-   -webkit-box-orient: vertical;
 
 }
 
@@ -183,6 +178,12 @@ label {
 	font-weight: 200;
 	color: #ffffff;
 	margin: 0 5px 30px 5px;
+
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3; /* number of lines to show */
+	-webkit-box-orient: vertical;
 }
 
 .card-btn {
