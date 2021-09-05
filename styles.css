@@ -9,6 +9,10 @@
 	background-color: #24252A
 }
 
+.page-body {
+	margin-left: 10%;
+	margin-right: 10%;
+}
 
 p{
 	font-family: "Roboto", sans-serif;
@@ -20,7 +24,11 @@ p{
 	text-align: justify;
 	margin-left: 15%;
 	margin-right: 15%;
+	padding-right: 2%;
+}
 
+.root-text {
+	margin-bottom: 20px;
 }
 
 h2 {
@@ -125,6 +133,10 @@ label {
 		margin-left: 5%;
 		margin-right: 5%;
 	}
+
+	div.nav {
+		display: block;
+	}
     
 }
 
@@ -150,8 +162,7 @@ label {
 	cursor: pointer;
 	transition: 0.2s;
 	margin-right: 20px;
-	margin-top: 20px;
-	padding-left: 20px;
+	margin-bottom: 20px;
 }
 
 .grid-item:hover {
@@ -160,10 +171,9 @@ label {
 }
 
 .card-img {
-	display: block;
 	width: 240px;
 	height: 150px;
-	object-fit: cover;
+	margin: auto;
 }
 
 .card-content {
@@ -221,6 +231,9 @@ label {
 	color: #ffffff;
 }
 
+.card {
+	margin: auto;
+}
 
 
 
